@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web - Multimedia UNAB</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                primary: '#2563eb',
+                secondary: '#0f172a',
+                accent: '#38bdf8',
+                card: '#1e293b'
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-blue-500 selection:text-white">
+    
+    <!-- Aquí iremos agregando el contenido -->
+     <!-- NAVEGACIÓN -->
+<nav class="sticky top-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            
+            <!-- Logo + Nombre del equipo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-blue-500/20">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-white block leading-none">[ Nombre del Equipo ]</span>
+                    <span class="text-xs text-slate-400">Facultad de Tecnología e Innovación</span>
+                </div>
+            </div>
+            
+            <!-- Links Desktop -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-blue-400 transition-colors">Inicio</a>
+                <a href="#equipo" class="hover:text-blue-400 transition-colors">Equipo</a>
+                <a href="#portafolio" class="hover:text-blue-400 transition-colors">Portafolio</a>
+                <a href="#creditos" class="hover:text-blue-400 transition-colors">Créditos</a>
+            </div>
+
+            <!-- Botón GitHub (Desktop) -->
+            <div class="hidden md:block">
+                <a href="https://github.com" target="_blank" class="px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center gap-2">
+                    <i class="fa-brands fa-github text-base"></i> Repositorio
+                </a>
+            </div>
+
+            <!-- Botón menú móvil -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2 text-sm">
+        <a href="#inicio" class="block py-2 text-slate-300 hover:text-white">Inicio</a>
+        <a href="#equipo" class="block py-2 text-slate-300 hover:text-white">Equipo</a>
+        <a href="#portafolio" class="block py-2 text-slate-300 hover:text-white">Portafolio</a>
+        <a href="#creditos" class="block py-2 text-slate-300 hover:text-white">Créditos</a>
+    </div>
+</nav>
+
+<!-- SECTION 1: INICIO -->
+<section id="inicio" class="relative py-20 md:py-32 overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Texto -->
+            <div class="space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
+                    <i class="fa-solid fa-graduation-cap"></i> Universidad Dr. Andrés Bello
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Portafolio Digital <br>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-sky-400">Multimedia 2026</span>
+                </h1>
+                
+                <p class="text-slate-400 text-base md:text-lg max-w-xl">
+                    Bienvenido a la vitrina de proyectos del <strong class="text-slate-200">[Nombre del Equipo]</strong>. Muestra oficial de proyectos desarrollados en la asignatura <em class="text-slate-300">Software de Diseño y Edición Multimedia</em>.
+                </p>
+
+                <!-- Tags de herramientas -->
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start text-xs font-semibold">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60"><i class="fa-solid fa-image text-indigo-400 mr-1.5"></i>GIMP</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60"><i class="fa-solid fa-pen-nib text-orange-400 mr-1.5"></i>Inkscape</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60"><i class="fa-solid fa-waveform text-emerald-400 mr-1.5"></i>Audacity</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60"><i class="fa-solid fa-video text-rose-400 mr-1.5"></i>Shotcut / OpenShot</span>
+                </div>
+
+                <!-- Botones CTA -->
+                <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#portafolio" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition shadow-lg shadow-blue-600/30 text-center">
+                        Explorar Trabajos <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="#equipo" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold border border-slate-700 transition text-center">
+                        Conocer al Equipo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contenedor del Logo del equipo -->
+            <div class="flex justify-center">
+                <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl bg-slate-900 border border-slate-800 p-6 flex flex-col items-center justify-center shadow-2xl shadow-blue-500/10 group hover:border-blue-500/40 transition duration-500">
+                    <div class="w-36 h-36 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-105 transition duration-500">
+                        <i class="fa-solid fa-cubes-stacked text-6xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-100">[ Logo del Equipo ]</h3>
+                    <p class="text-xs text-slate-400 mt-1 text-center">Identidad visual creada en Inkscape</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2: EQUIPO -->
+<section id="equipo" class="py-20 bg-slate-950 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Título de sección -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Integrantes del Proyecto</h2>
+            <h3 class="text-3xl font-extrabold text-white">Nuestro Equipo de Trabajo</h3>
+            <p class="text-slate-400 text-sm mt-3">Equipo colaborativo conformado por 10 integrantes...</p>
+        </div>
+
+        <!-- Grid de 10 tarjetas -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+            
+            <!-- Cada miembro es una tarjeta igual (copia y pega 10 veces) -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 text-center hover:border-blue-500/50 transition group">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" 
+                     alt="Foto Estudiante" 
+                     class="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-slate-700 group-hover:border-blue-500 transition">
+                <h4 class="font-semibold text-sm text-slate-100">Nombre Estudiante 1</h4>
+                <p class="text-xs text-blue-400 font-medium mt-0.5">Coordinador General</p>
+                <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">Edición GIMP</span>
+            </div>
+
+            <!-- ... repite la misma estructura para los 9 restantes -->
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3: PORTAFOLIO -->
+<section id="portafolio" class="py-20 bg-slate-900 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Título -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Galería de Proyectos</h2>
+            <h3 class="text-3xl font-extrabold text-white">Muestra Multimedia</h3>
+            <p class="text-slate-400 text-sm mt-2">Explora los trabajos seleccionados...</p>
+        </div>
+
+        <!-- Botones de filtro -->
+        <div class="flex flex-wrap justify-center gap-2 mb-12" id="filter-buttons">
+            <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 text-white transition">Todos</button>
+            <button data-filter="gimp" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700 transition">
+                <i class="fa-solid fa-image text-indigo-400 mr-1"></i> GIMP
+            </button>
+            <!-- ... resto de botones (inkscape, audacity, video, campana) -->
+        </div>
+
+        <!-- Grid de proyectos -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+            
+            <!-- Ejemplo de tarjeta GIMP -->
+            <div class="project-card gimp bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
+                <div class="relative h-48 overflow-hidden bg-slate-900">
+                    <img src="..." alt="..." class="w-full h-full object-cover">
+                    <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-indigo-600/90 text-white text-[10px] font-bold">GIMP</span>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-base text-slate-100 mb-2">Retoque Digital y Fotomontaje</h4>
+                    <p class="text-xs text-slate-400 line-clamp-2 mb-4">Descripción corta...</p>
+                    <div class="flex items-center justify-between pt-3 border-t border-slate-800">
+                        <button onclick="openModal()" class="text-xs text-blue-400 font-semibold...">
+                            Ver detalles
+                        </button>
+                        <a href="#" class="text-xs text-slate-500..."><i class="fa-solid fa-download"></i> Original</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Las demás tarjetas siguen el mismo patrón (inkscape, audacity, video, campana) -->
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5: CRÉDITOS -->
+<section id="creditos" class="py-16 bg-slate-950 ...">
+    <!-- Tarjeta con info de la asignatura, docente, facultad y botón de GitHub -->
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 bg-slate-950 text-slate-500 text-xs text-center border-t border-slate-900">
+    <p>© 2026 Universidad Dr. Andrés Bello — Facultad de Tecnología e Innovación. Todos los derechos reservados.</p>
+</footer>
+
+<!-- MODAL -->
+<div id="project-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 w-full max-w-2xl rounded-2xl overflow-hidden shadow-2xl relative">
+        <!-- Header del modal -->
+        <div class="px-6 py-4 border-b border-slate-800 flex justify-between items-center bg-slate-950">
+            <div>
+                <span id="modal-tool" class="...">Herramienta</span>
+                <h3 id="modal-title" class="text-lg font-bold text-white mt-1">Título</h3>
+            </div>
+            <button onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- Cuerpo -->
+        <div class="p-6 space-y-4 max-h-[75vh] overflow-y-auto">
+            <div id="modal-media-container" class="w-full h-56 ...">
+                <img id="modal-image" src="" alt="Preview" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h5>Objetivo del Ejercicio:</h5>
+                <p id="modal-objective">...</p>
+            </div>
+            <div>
+                <h5>Qué se Aprendió:</h5>
+                <p id="modal-learning">...</p>
+            </div>
+        </div>
+
+        <!-- Footer del modal -->
+        <div class="px-6 py-4 border-t ... flex justify-between">
+            <a id="modal-download" href="#" ...>Descargar Archivo Original</a>
+            <button onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 1. Menú móvil
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // 2. Filtrado de proyectos
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Quitar estilo activo a todos
+            filterBtns.forEach(b => {
+                b.classList.remove('bg-blue-600', 'text-white');
+                b.classList.add('bg-slate-800', 'text-slate-300');
+            });
+            // Poner estilo activo al botón actual
+            btn.classList.remove('bg-slate-800', 'text-slate-300');
+            btn.classList.add('bg-blue-600', 'text-white');
+
+            const filter = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                if (filter === 'all' || card.classList.contains(filter)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // 3. Modal
+    const modal = document.getElementById('project-modal');
+    // ... referencias a los elementos del modal
+
+    function openModal(title, tool, objective, learning, imageSrc, downloadUrl) {
+        // Rellenar los datos
+        document.getElementById('modal-title').innerText = title;
+        document.getElementById('modal-tool').innerText = tool;
+        // ...
+        modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+        modal.classList.add('hidden');
+    }
+
+    // Cerrar al hacer clic fuera
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+</script>
+
+
+
+</body>
+</html>
+
