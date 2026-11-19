@@ -71,7 +71,7 @@
 
                 <!-- Botón GitHub (Desktop) -->
                 <div class="hidden md:block">
-                    <a href="https://github.com" target="_blank" class="px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center gap-2">
+                    <a href="https://github.com/Angelito50/RepositorioDeProyectos_EdicionMultimedia.git" target="_blank" class="px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center gap-2">
                         <i class="fa-brands fa-github text-base"></i> Repositorio
                     </a>
                 </div>
@@ -173,16 +173,27 @@
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
             
             <!-- Cada miembro es una tarjeta igual (copia y pega 10 veces) -->
+
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 text-center hover:border-blue-500/50 transition group">
+                <img src="Foto_Estudiantes/AngelMedrano.jpg" 
+                    alt="Foto Estudiante" 
+                    class="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-slate-700 group-hover:border-blue-500 transition">
+                <h4 class="font-semibold text-sm text-slate-100">Angel Medrano</h4>
+                <p class="text-xs text-blue-400 font-medium mt-0.5">Coordinador General</p>
+                <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">Edición GIMP</span>
+            </div>
+
+            <!-- ... repite la misma estructura para los 9 restantes -->
+
+             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 text-center hover:border-blue-500/50 transition group">
                 <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" 
                     alt="Foto Estudiante" 
                     class="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-slate-700 group-hover:border-blue-500 transition">
                 <h4 class="font-semibold text-sm text-slate-100">Nombre Estudiante 1</h4>
                 <p class="text-xs text-blue-400 font-medium mt-0.5">Coordinador General</p>
                 <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">Edición GIMP</span>
+            
             </div>
-
-            <!-- ... repite la misma estructura para los 9 restantes -->
         </div>
     </div>
 </section>
@@ -230,6 +241,41 @@
                 </div>
 
                 <!-- Las demás tarjetas siguen el mismo patrón (inkscape, audacity, video, campana) -->
+                
+                <div class="project-card gimp bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
+                    <div class="relative h-48 overflow-hidden bg-slate-900">
+                        <img src="Proyectos_imagenes_portadas/sonido.jpg" alt="..." class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-indigo-600/90 text-white text-[10px] font-bold">AUDACITY</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-base text-slate-100 mb-2">Audio 1 creado en Audacity</h4>
+                        <p class="text-xs text-slate-400 line-clamp-2 mb-4">Primer audio equipo 1 creado con efectos de sonido y musica elaborado en el programa Audacity</p>
+                        <div class="flex items-center justify-between pt-3 border-t border-slate-800">
+                            <button onclick="window.open('https://drive.google.com/file/d/1Sg2f6mrGSpEJm_gKRuLtMP0c6TnGoU_6/view?usp=drive_link', '_blank', 'noopener,noreferrer')" class="text-xs text-blue-400 font-semibold...">
+                                Ver detalles
+                            </button>
+                            <a href="" class="text-xs text-slate-500..."><i class="fa-solid fa-download"></i> Original</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card gimp bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
+                    <div class="relative h-48 overflow-hidden bg-slate-900">
+                        <img src="Proyectos_imagenes_portadas/complementario.webp" alt="..." class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-indigo-600/90 text-white text-[10px] font-bold">Proyecto Integrado</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-base text-slate-100 mb-2">Proyecto integrado que une distintas herramientas</h4>
+                        <p class="text-xs text-slate-400 line-clamp-2 mb-4">Proyecto complementario mezclando varias herramientas aprendidas en la materia</p>
+                        <div class="flex items-center justify-between pt-3 border-t border-slate-800">
+                            <button onclick="window.open('https://youtu.be/ZJHepUGNxRM?si=7CVNyrE3cdrkr4FT')" class="text-xs text-blue-400 font-semibold...">
+                                Ver detalles
+                            </button>
+                            <a href="#" class="text-xs text-slate-500..."><i class="fa-solid fa-download"></i> Original</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
