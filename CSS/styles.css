@@ -1,1 +1,300 @@
-/* vacia de momento
+ /*======================================================= */
+#inicio {
+    background-color: #0B1020 !important;
+
+    background-image:
+        linear-gradient(
+            rgba(11, 16, 32, 0.48),
+            rgba(11, 16, 32, 0.58)
+        ),
+        url("../img/Fondo_web.png") !important;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+#equipo {
+    background-color: #0B1020 !important;
+
+    background-image:
+        linear-gradient(
+            rgba(11, 16, 32, 0.48),
+            rgba(11, 16, 32, 0.58)
+        ),
+        url("../img/Fondo_web2.png") !important;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+#portafolio {
+    background-color: #0B1020 !important;
+
+    background-image:
+        linear-gradient(
+            rgba(11, 16, 32, 0.48),
+            rgba(11, 16, 32, 0.58)
+        ),
+        url("../img/Fondo_web3.png") !important;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+:root {
+    --unitek-cyan: #00E6FF;
+    --unitek-blue: #2A7BFF;
+    --unitek-violet: #A855F7;
+    --unitek-dark: #0B1020;
+    --unitek-gray: #E2E8F0;
+    --unitek-white: #FFFFFF;
+
+    --unitek-surface: #10182B;
+    --unitek-surface-soft: #141F36;
+    --unitek-border: rgba(42, 123, 255, 0.24);
+    --unitek-glow-cyan: rgba(0, 230, 255, 0.18);
+    --unitek-glow-blue: rgba(42, 123, 255, 0.20);
+    --unitek-glow-violet: rgba(168, 85, 247, 0.18);
+}
+
+/* Fondo general: conserva el diseño oscuro del sitio */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    background-color: var(--unitek-dark) !important;
+    color: var(--unitek-gray) !important;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Selección de texto */
+::selection {
+    background: var(--unitek-cyan);
+    color: var(--unitek-dark);
+}
+
+/* Colores de texto existentes en las clases Tailwind */
+.text-white,
+.text-slate-100,
+.text-slate-200 {
+    color: var(--unitek-white) !important;
+}
+
+.text-slate-300,
+.text-slate-400,
+.text-slate-500 {
+    color: var(--unitek-gray) !important;
+}
+
+.text-blue-400,
+.text-indigo-400,
+.text-sky-400 {
+    color: var(--unitek-cyan) !important;
+}
+
+.text-purple-400,
+.text-pink-400 {
+    color: var(--unitek-violet) !important;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5 {
+    color: var(--unitek-white);
+    letter-spacing: -0.025em;
+    transition: color 220ms ease, text-shadow 220ms ease;
+}
+
+/* Degradado de marca para el título principal */
+.bg-gradient-to-r.from-blue-400,
+.bg-clip-text.text-transparent {
+    background-image: linear-gradient(
+        100deg,
+        var(--unitek-cyan) 0%,
+        var(--unitek-blue) 52%,
+        var(--unitek-violet) 100%
+    ) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+/* Enlaces: el texto cambia de color al pasar el cursor */
+a {
+    transition:
+        color 220ms ease,
+        background-color 220ms ease,
+        border-color 220ms ease,
+        box-shadow 220ms ease,
+        transform 220ms ease;
+}
+
+a:hover {
+    color: var(--unitek-cyan) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--unitek-cyan);
+}
+/* Botones secundarios */
+button,
+.filter-btn {
+    transition:
+        color 220ms ease,
+        background 220ms ease,
+        border-color 220ms ease,
+        box-shadow 220ms ease,
+        transform 220ms ease;
+}
+
+button:hover,
+.filter-btn:hover {
+    border-color: var(--unitek-cyan) !important;
+    color: var(--unitek-cyan) !important;
+}
+
+#filter-buttons .filter-btn.active {
+    background: linear-gradient(
+        105deg,
+        var(--unitek-blue),
+        var(--unitek-violet)
+    ) !important;
+    color: var(--unitek-white) !important;
+    border-color: transparent !important;
+    box-shadow: 0 6px 20px rgba(42, 123, 255, 0.22);
+}
+
+/* Tarjetas del equipo */
+#equipo .group {
+    background-color: var(--unitek-surface) !important;
+    border-color: var(--unitek-border) !important;
+    transition:
+        border-color 250ms ease,
+        box-shadow 250ms ease,
+        transform 250ms ease;
+}
+
+#equipo .group:hover {
+    border-color: var(--unitek-cyan) !important;
+    box-shadow:
+        0 0 0 1px rgba(0, 230, 255, 0.10),
+        0 12px 30px var(--unitek-glow-blue);
+    transform: translateY(-3px);
+}
+#equipo .group:hover h4 {
+    color: var(--unitek-cyan) !important;
+    text-shadow: 0 0 12px var(--unitek-glow-cyan);
+}
+
+#equipo .group img {
+    transition: border-color 220ms ease, box-shadow 220ms ease;
+}
+
+#equipo .group:hover img {
+    border-color: var(--unitek-violet) !important;
+    box-shadow: 0 0 14px var(--unitek-glow-violet);
+}
+
+/* Tarjetas del portafolio */
+.project-card {
+    background-color: var(--unitek-dark) !important;
+    border-color: var(--unitek-border) !important;
+    transition:
+        border-color 250ms ease,
+        box-shadow 250ms ease,
+        transform 250ms ease;
+}
+
+.project-card:hover {
+    border-color: var(--unitek-cyan) !important;
+    box-shadow:
+        0 0 0 1px rgba(0, 230, 255, 0.08),
+        0 14px 34px rgba(42, 123, 255, 0.14);
+    transform: translateY(-4px);
+}
+
+.project-card h4 {
+    transition: color 220ms ease, text-shadow 220ms ease;
+}
+
+.project-card:hover h4 {
+    color: var(--unitek-cyan) !important;
+    text-shadow: 0 0 12px var(--unitek-glow-cyan);
+}
+
+.project-card p {
+    color: var(--unitek-gray) !important;
+}
+
+/* Etiquetas de herramientas en las tarjetas */
+.project-card > div:first-child > span {
+    background: linear-gradient(
+        110deg,
+        var(--unitek-blue),
+        var(--unitek-violet)
+    ) !important;
+    color: var(--unitek-white) !important;
+}
+
+/* Iconos: se conserva su función y se unifica su apariencia */
+.fa-image,
+.fa-microphone,
+.fa-pen-nib,
+.fa-film,
+.fa-graduation-cap {
+    transition: color 220ms ease, filter 220ms ease;
+}
+
+a:hover i,
+button:hover i {
+    color: var(--unitek-cyan);
+    filter: drop-shadow(0 0 5px var(--unitek-glow-cyan));
+}
+
+/* Separadores y líneas */
+.border-b,
+.border-t {
+    border-color: var(--unitek-border) !important;
+}
+
+/* Modal: mantiene su estructura y mejora el contraste */
+#project-modal {
+    background-color: rgba(5, 9, 20, 0.86) !important;
+}
+
+#project-modal > div {
+    background-color: var(--unitek-surface) !important;
+    border-color: var(--unitek-border) !important;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+#project-modal h3,
+#project-modal h5 {
+    color: var(--unitek-white) !important;
+}
+
+#project-modal button:hover,
+#project-modal a:hover {
+    color: var(--unitek-cyan) !important;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--unitek-dark) !important;
+    color: rgba(226, 232, 240, 0.72) !important;
+    border-color: var(--unitek-border) !important;
+}
+
+/* Accesibilidad: respeta la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

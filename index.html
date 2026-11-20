@@ -166,7 +166,7 @@
         <div class="text-center max-w-2xl mx-auto mb-16">
             <h2 class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2">Integrantes del Proyecto</h2>
             <h3 class="text-3xl font-extrabold text-white">Nuestro Equipo de Trabajo</h3>
-            <p class="text-slate-400 text-sm mt-3">Equipo colaborativo conformado por 10 integrantes...</p>
+            <p class="text-slate-400 text-sm mt-3">Equipo colaborativo conformado por 11 integrantes...</p>
         </div>
 
         <!-- Grid de 10 tarjetas -->
@@ -182,6 +182,26 @@
                 <p class="text-xs text-blue-400 font-medium mt-0.5">Coordinador General</p>
                 <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">Audacity y proyecto integrado</span>
             </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 text-center hover:border-blue-500/50 transition group">
+                <img src="Foto_Estudiantes/OszyryPereira.png" 
+                    alt="Foto Estudiante" 
+                    class="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-slate-700 group-hover:border-blue-500 transition">
+                <h4 class="font-semibold text-sm text-slate-100">Oszyry Pereira</h4>
+                <p class="text-xs text-blue-400 font-medium mt-0.5">Coordinador de Diseño</p>
+                <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">Audacity e Inkscape</span>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 text-center hover:border-blue-500/50 transition group">
+                <img src="Foto_Estudiantes/CristopherMartinez.png" 
+                    alt="Foto Estudiante" 
+                    class="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-slate-700 group-hover:border-blue-500 transition">
+                <h4 class="font-semibold text-sm text-slate-100">Cristopher Martinez</h4>
+                <p class="text-xs text-blue-400 font-medium mt-0.5">Colaborador</p>
+                <span class="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">Gimp</span>
+            </div>
+
+
 
             <!-- ... repite la misma estructura para los 9 restantes -->
              
@@ -230,25 +250,45 @@
             <!-- Grid de proyectos -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
 
-                <!-- Ejemplo de tarjeta GIMP -->
+                <!-- Tarjetas de  GIMP -->
                 <div class="project-card gimp bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
                     <div class="relative h-48 overflow-hidden bg-slate-900">
-                        <img src="..." alt="..." class="w-full h-full object-cover">
+                        <img src="Proyectos_imagenes_portadas/Portada_GIMP.png" alt="..." class="w-full h-full object-cover">
                         <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-indigo-600/90 text-white text-[10px] font-bold">GIMP</span>
                     </div>
                     <div class="p-6">
                         <h4 class="font-bold text-base text-slate-100 mb-2">Retoque Digital y Fotomontaje</h4>
-                        <p class="text-xs text-slate-400 line-clamp-2 mb-4">Descripción corta...</p>
+                        <p class="text-xs text-slate-400 line-clamp-2 mb-4">Montaje digital combinando una imagen de fondo con un objeto, ajustando su opacidad para lograr una integración natural.</p>
                         <div class="flex items-center justify-between pt-3 border-t border-slate-800">
-                            <button onclick="openModal()" class="text-xs text-blue-400 font-semibold...">
+                            <button onclick="window.open('https://drive.google.com/file/d/15ZsUuZuqDqdIqonX9OhkKiax8Bq9vMxr/view?usp=sharing', '_blank', 'noopener,noreferrer')" class="text-xs text-blue-400 font-semibold...">
                                 Ver detalles
                             </button>
-                            <a href="#" class="text-xs text-slate-500..."><i class="fa-solid fa-download"></i> Original</a>
+                            <a href="" class="text-xs text-slate-500..."><i class="fa-solid fa-download"></i> Original</a>
+                        </div>
+                    </div> 
+                </div>
+
+
+                <!-- Tarjetas de INKSCAPE -->
+                <div class="project-card inkscape bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
+                    <div class="relative h-48 overflow-hidden bg-slate-900">
+                        <img src="Proyectos_imagenes_portadas/Portada_INKSCAPE.png" alt="..." class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-indigo-600/90 text-white text-[10px] font-bold">INKSCAPE</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-base text-slate-100 mb-2">Vectorización de Imágen</h4>
+                        <p class="text-xs text-slate-400 line-clamp-2 mb-4">Vectorización de imágen utilizando el efecto mosaico para crear un mural patriótico.</p>
+                        <div class="flex items-center justify-between pt-3 border-t border-slate-800"
+                            <button onclick="window.open('https://drive.google.com/file/d/1kau9XpB5ft3bzrOhcVTHr0pMJJLMXIlH/view?usp=sharing', '_blank', 'noopener,noreferrer')" class="text-xs text-blue-400 font-semibold...">
+                                Ver detalles
+                            </button>
+                            <a href="" class="text-xs text-slate-500..."><i class="fa-solid fa-download"></i> Original</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Las demás tarjetas siguen el mismo patrón (inkscape, audacity, video, campana) -->
+
+                <!-- Tarjetas de AUDACITY -->
                 
                 <div class="project-card gimp bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
                     <div class="relative h-48 overflow-hidden bg-slate-900">
@@ -267,6 +307,27 @@
                     </div>
                 </div>
 
+                <div class="project-card gimp bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
+                    <div class="relative h-48 overflow-hidden bg-slate-900">
+                        <img src="Proyectos_imagenes_portadas/Audacity_boda.png" alt="..." class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-indigo-600/90 text-white text-[10px] font-bold">AUDACITY</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-base text-slate-100 mb-2">Creación de Audio 2 en Audacity</h4>
+                        <p class="text-xs text-slate-400 line-clamp-2 mb-4">Producción de audio mediante la elaboración de la crónica de una boda combinando diferentes pistas de audio, música y efectos de sonido acordes con la temática. </p>
+                        <div class="flex items-center justify-between pt-3 border-t border-slate-800">
+                            <button onclick="window.open('https://drive.google.com/file/d/19baOIT4CTBlxrs_slk2FxLj6JyOa8QrE/view?usp=sharing', '_blank', 'noopener,noreferrer')" class="text-xs text-blue-400 font-semibold...">
+                                Ver detalles
+                            </button>
+                            <a href="" class="text-xs text-slate-500..."><i class="fa-solid fa-download"></i> Original</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjetas de Shotcut / OpenShot -->
+
+                
+                <!-- Tarjeta de Proyecto Integrado -->
                 <div class="project-card gimp bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-slate-700 transition">
                     <div class="relative h-48 overflow-hidden bg-slate-900">
                         <img src="Proyectos_imagenes_portadas/complementario.webp" alt="..." class="w-full h-full object-cover">
