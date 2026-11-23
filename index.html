@@ -134,24 +134,30 @@
                 
 <!-- Contenedor del Logo del equipo -->
 <div class="flex justify-center">
-    <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl bg-slate-900 border border-slate-800 p-6 flex flex-col items-center justify-center shadow-2xl shadow-blue-500/10 group hover:border-blue-500/40 transition duration-500">
+    <div id="unitek-slogan-card" class="relative w-80 h-96 md:w-96 md:h-96 rounded-3xl bg-slate-900 border border-slate-800 p-8 flex flex-col items-center justify-center shadow-2xl shadow-blue-500/10 group transition duration-500">
 
-        <!-- Logo Witec -->
-        <div class="w-36 h-36 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-4 group-hover:scale-105 transition duration-500">
+            <!-- Logotipo -->
 
-            <img src="img/Logotipo1.png"
-                alt="Logo de UNITEK"
-                class="w-28 h-28 object-contain">
+            <div id="unitek-logo-container"
+                class="w-48 h-48 md:w-56 md:h-56 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center mb-6 transition duration-500">
+
+                <img src="img/Logotipo1.png" alt="Logo de UNITEK" class="w-40 h-40 md:w-48 md:h-48 object-contain">
+
+            </div>
+
+            <!-- Título del eslogan -->
+
+            <h3 class="font-bold text-xl md:text-2xl text-slate-100 text-center mb-2">
+                Nuestro eslogan
+            </h3>
+
+            <!-- Frase institucional -->
+
+            <p id="unitek-slogan-text" class="text-sm md:text-base text-slate-300 text-center leading-relaxed max-w-xs">
+            La tecnología inspira, <br>
+            la creatividad transforma. </p>
 
         </div>
-
-        <h3 class="font-bold text-xl text-slate-100"> Logo del Equipo </h3>
-
-        <p class="text-xs text-slate-400 mt-1 text-center">
-            Identidad visual del equipo
-        </p>
-
-    </div>
 </div>
 </div> 
         </div> 
@@ -220,7 +226,7 @@
             </div>
 
             <!-- ... repite la misma estructura para los 9 restantes -->
-             
+            
 
         </div>
     </div>
@@ -436,11 +442,47 @@
     <section id="creditos" class="py-16 bg-slate-950 ...">
         <!-- Tarjeta con info de la asignatura, docente, facultad y botón de GitHub -->
     </section>
-
+    
     <!-- FOOTER -->
-    <footer class="py-6 bg-slate-950 text-slate-500 text-xs text-center border-t border-slate-900">
-        <p>© 2026 Universidad Dr. Andrés Bello — Facultad de Tecnología e Innovación. Todos los derechos reservados.</p>
-    </footer>
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <div class="footer-identidad">
+            <h3>PORTAFOLIO DIGITAL</h3>
+            <p>Universidad Dr. Andrés Bello</p>
+            <p>Facultad de Tecnología e Innovación</p>
+        </div>
+
+        <div class="footer-creditos">
+            <h4>Créditos académicos</h4>
+
+            <p><strong>Asignatura:</strong> Software de Diseño y Edición Multimedia</p>
+            <p><strong>Docente:</strong> Ing. Franklin Buruca</p>
+            <p><strong>Ciclo académico:</strong> Ciclo II - 2026</p>
+            <p><strong>Fecha de presentación:</strong> 05/12/2026</p>
+        </div>
+
+        <!-- COLUMNA 3: REDES SOCIALES -->
+        <div class="footer-redes">
+        <h4>Redes sociales</h4>
+            
+            <a href="https://www.instagram.com/unab.sm?fqnt=MW4zaGZrbXp0Njc3dQ==/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram UNAB">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram UNAB</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- PARTE INFERIOR -->
+    <div class="footer-inferior">
+        <p>© 2026 Portafolio Digital | Todos los derechos reservados.</p>
+    </div>
+</footer>
+
 
     <!-- MODAL -->
     <div id="project-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
