@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "angel-unab-44a73",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
